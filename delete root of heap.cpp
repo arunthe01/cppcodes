@@ -36,11 +36,11 @@ void printnode(int arr[],int n){
 int main(){
 	int arr[]= {2,5,10,15,12,11,17};
 	
-/*         2
+/*            2
 	     /  \ 
 	   5     10                   
 	  / \   / \
-    15 12  11 17  
+        15  12 11  17  
 */
 	int n=(sizeof(arr)/sizeof(arr[0]));
   	deleteroot(arr,n);
