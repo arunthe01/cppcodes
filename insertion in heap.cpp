@@ -3,7 +3,7 @@ using namespace std;
 
 void heapify(int arr[], int n, int i){
 	 int parent=(i-1)/2;
-	 if(parent>=0){
+	 if(parent>=0){                         //to make sure that parent doesn't decrease 0
 		 if(arr[parent]<arr[i]){
 		 	swap(arr[i],arr[parent]);
 		 	heapify(arr,n,parent);	
