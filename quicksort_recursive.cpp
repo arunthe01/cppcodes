@@ -20,7 +20,7 @@ int part( int arr[], int low , int high){
 
 
 void quicksort(int arr[], int low , int high){
-    if(low<high){
+    if(low == high){
     int pi=part(arr,low,high);
     quicksort(arr,low,pi-1);
     quicksort(arr,pi+1,high);
